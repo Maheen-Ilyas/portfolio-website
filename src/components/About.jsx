@@ -11,14 +11,14 @@ const ServiceCard = ({ title, index, icon }) => {
     <Tilt className="xs:w-[240px] w-full">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="pink-border-gradient p-[1px] rounded-[20px]"
+        className="black-border-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div
           options={{ max: 45, scale: 1, speed: 450 }}
-          className="bg-[#fef4f2] rounded-[20px] py-5 px-12 min-h-[240px] flex justify-evenly items-center flex-col"
+          className="bg-[#12171D] rounded-[20px] py-5 px-12 min-h-[240px] flex justify-evenly items-center flex-col"
         >
           <img src={icon} alt={title} className="w-30 h-30 object-contain" />
-          <h3 className="font-playfair font-semibold text-[#c17e7a] text-[18px] text-center">
+          <h3 className="font-playfair font-semibold text-[#FEFEFE] text-[18px] text-center">
             {title}
           </h3>
         </div>
@@ -32,19 +32,19 @@ const About = () => {
     <div className={`${styles.paddingX} max-w-7xl mx-auto relative z-0`}>
       <motion.div variants={textVariant()}>
         <p
-          className={`${styles.sectionSubText} text-[#c47c84] mt-10 font-semibold font-roboto`}
+          className={`${styles.sectionSubText} text-[#121117] mt-10 font-semibold font-poppins`}
         >
           INTRODUCTION
         </p>
         <h2
-          className={`${styles.sectionHeadText} text-[#d89098] font-bold font-playfair`}
+          className={`${styles.sectionHeadText} text-[#14161E] font-bold font-playfair`}
         >
           About.
         </h2>
       </motion.div>
       <motion.p
         variants={fadeIn("right", "spring", 0.1, 1)}
-        className="text-[17px] mt-4 text-[#c47c84] font-roboto font-normal max-w-3xl leading-[30px]"
+        className="text-[17px] mt-4 text-[#121117] font-poppins font-normal max-w-3xl leading-[30px]"
       >
         As a passionate software engineer, I am constantly driven by the desire
         to solve complex problems using technology. With a strong foundation in

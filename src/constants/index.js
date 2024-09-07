@@ -133,6 +133,7 @@ const experiences = [
       "Gained a deeper understanding of Git and GitHub, effectively managing code versions and collaborating with others.",
       "Utilized the Flutter Text-to-Speech (flutter_tts) and Audio Player (just_audio) packages to improve user interaction in an educational application.",
     ],
+    techStack: ["Flutter", "Dart"],
   },
   {
     title: "Flutter Developer",
@@ -145,6 +146,7 @@ const experiences = [
       "Implemented responsive Flutter applications that worked seamlessly across various screen sizes.",
       "Integrated APIs to enhance application functionality and improve user experience.",
     ],
+    techStack: ["Flutter", "Dart", "REST APIs"],
   },
 ];
 

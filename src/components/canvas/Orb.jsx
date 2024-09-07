@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Box, Sphere, Cone } from "@react-three/drei";
-import { HemisphereLight } from "three";
 
 const OrbCanvas = () => {
   const [shapeSize, setShapeSize] = useState(1);
@@ -47,19 +46,18 @@ const OrbCanvas = () => {
     >
       <ambientLight intensity={0.5} />
       <directionalLight position={[10, 10, 5]} intensity={0.5} />
-      <primitive object={new HemisphereLight("#ffffff", "#e4aeb4", 0.5)} />
       <OrbitControls enableZoom={false} />
       <Box position={positions.box} scale={[shapeSize, shapeSize, shapeSize]}>
-        <meshStandardMaterial color="#e4aeb4" />
+        <meshStandardMaterial color="#3c444C" />
       </Box>
       <Sphere
         position={positions.sphere}
         scale={[shapeSize, shapeSize, shapeSize]}
       >
-        <meshStandardMaterial color="#e4aeb4" />
+        <meshStandardMaterial color="#3c444C" />
       </Sphere>
       <Cone position={positions.cone} scale={[shapeSize, shapeSize, shapeSize]}>
-        <meshStandardMaterial color="#e4aeb4" />
+        <meshStandardMaterial color="#3c444C" />
       </Cone>
     </Canvas>
   );
