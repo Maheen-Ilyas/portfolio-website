@@ -22,10 +22,8 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import repsoft from "./company/repsoft.png"
+import girlscript from "./company/girlscript.png"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -38,6 +36,8 @@ export {
   mobile,
   web,
   libraries,
+  girlscript,
+  repsoft,
   github,
   menu,
   close,
@@ -54,10 +54,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   carrent,
   jobit,
   tripguide,

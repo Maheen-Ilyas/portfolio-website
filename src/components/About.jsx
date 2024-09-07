@@ -29,7 +29,7 @@ const ServiceCard = ({ title, index, icon }) => {
 
 const About = () => {
   return (
-    <>
+    <div className={`${styles.paddingX} max-w-7xl mx-auto relative z-0`}>
       <motion.div variants={textVariant()}>
         <p
           className={`${styles.sectionSubText} text-[#c47c84] mt-10 font-semibold font-roboto`}
@@ -37,7 +37,7 @@ const About = () => {
           INTRODUCTION
         </p>
         <h2
-          className={`${styles.sectionHeadText} text-[#bc8484] font-playfair`}
+          className={`${styles.sectionHeadText} text-[#d89098] font-bold font-playfair`}
         >
           About.
         </h2>
@@ -57,7 +57,7 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
