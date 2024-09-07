@@ -1,71 +1,66 @@
-import React, { Suspense, useEffect, useRef, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
-import {
-  OrbitControls,
-  useGLTF,
-  Preload,
-  useAnimations,
-} from "@react-three/drei";
-import CanvasLoader from "../Loader";
-
-const Orb = ({ isMobile }) => {
-  const group = useRef();
-  const { scene, animations } = useGLTF("./cyber_orb/scene.gltf");
-  const { actions } = useAnimations(animations, group);
-
-  useEffect(() => {
-    if (actions) {
-      Object.values(actions).forEach((action) => action.play());
-    }
-  }, [actions]);
-
-  return (
-    <group ref={group}>
-      <hemisphereLight intensity={0.8} groundColor="black" />
-      <directionalLight position={[10, 10, 10]} intensity={1.5} />
-      <pointLight intensity={2} decay={2} distance={50} position={[5, 5, 5]} />
-      <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
-      />
-      <primitive
-        object={scene}
-        scale={isMobile ? 0.8 : 1.8}
-        position={isMobile ? [0, 0, 0] : [0, -3.74, 0]}
-      />
-    </group>
-  );
-};
+import { OrbitControls, Box, Sphere, Cone } from "@react-three/drei";
+import { HemisphereLight } from "three";
 
 const OrbCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [shapeSize, setShapeSize] = useState(1);
+  const [positions, setPositions] = useState({
+    box: [-3, 1.4, 1],
+    sphere: [5, 0, 0.4],
+    cone: [-3, -1.6, 0],
+  });
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 600px)");
-    setIsMobile(mediaQuery.matches);
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
+    const handleResize = () => {
+      if (window.innerWidth <= 500) {
+        setShapeSize(0.6);
+        setPositions({
+          box: [-1, 0.8, 0.5],
+          sphere: [1, 0, 0.2],
+          cone: [-1, -0.8, 0],
+        });
+      } else {
+        setShapeSize(1);
+        setPositions({
+          box: [-3, 1.4, 1],
+          sphere: [5, 0, 0.4],
+          cone: [-3, -1.6, 0],
+        });
+      }
     };
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-    return () =>
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
     <Canvas
-      shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+      }}
+      camera={{ position: [0, 0, 5], fov: 75 }}
     >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} />
-        <Orb isMobile={isMobile} />
-      </Suspense>
-      <Preload all />
+      <ambientLight intensity={0.5} />
+      <directionalLight position={[10, 10, 5]} intensity={0.5} />
+      <primitive object={new HemisphereLight("#ffffff", "#e4aeb4", 0.5)} />
+      <OrbitControls enableZoom={false} />
+      <Box position={positions.box} scale={[shapeSize, shapeSize, shapeSize]}>
+        <meshStandardMaterial color="#e4aeb4" />
+      </Box>
+      <Sphere
+        position={positions.sphere}
+        scale={[shapeSize, shapeSize, shapeSize]}
+      >
+        <meshStandardMaterial color="#e4aeb4" />
+      </Sphere>
+      <Cone position={positions.cone} scale={[shapeSize, shapeSize, shapeSize]}>
+        <meshStandardMaterial color="#e4aeb4" />
+      </Cone>
     </Canvas>
   );
 };

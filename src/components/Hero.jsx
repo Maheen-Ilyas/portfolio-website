@@ -1,36 +1,38 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { styles } from "../styles";
 import { OrbCanvas } from "./canvas";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
-      <div
-        className={`${styles.paddingX} absolute inset-0 top-[110px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
-      >
-        <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915EFF]"></div>
-          <div className="w-1 sm:h-80 h-40 violet-gradient"></div>
-        </div>
-        <div className="flex flex-col justify-center items-start">
-          <h1 className={`${styles.heroHeadText}`}>
-            Hi, I'm <span className="text-[#918]">Maheen Ilyas</span>
+      <div className="absolute inset-0 flex items-center justify-center h-screen">
+        <div className="text-center">
+          <h1 className="text-white text-5xl font-bold mb-2 font-playfair">
+            MAHEEN ILYAS
           </h1>
-          <p
-            className={`${styles.heroSubText} mt-2 text-white-100 font-normal`}
-          >
-            I'm a software engineer with a passion for Mobile
-            <br className="sm:block hidden" />
-            Application Development and AI/ML. I focus on
-            <br className="sm:block hidden" />
-            building user-friendly applications can make a
-            <br className="sm:block hidden" />
-            significant impact.
+          <p className="text-white text-lg font-medium font-roboto">
+            AI/ML Enthusiast and Mobile Application Developer
           </p>
         </div>
       </div>
       <OrbCanvas />
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+        <a href="#about">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-white flex justify-center items-start p-2">
+            <motion.div
+              animate={{
+                y: [0, 24, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-3 h-3 rounded-full bg-white mb-1"
+            />
+          </div>
+        </a>
+      </div>
     </section>
   );
 };
