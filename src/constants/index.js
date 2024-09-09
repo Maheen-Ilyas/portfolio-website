@@ -6,22 +6,28 @@ import {
   libraries,
   repsoft,
   girlscript,
+  c,
+  cpp,
+  python,
+  java,
+  dart,
+  html5,
+  css3,
   javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
+  flutter,
+  node,
+  react,
+  pandas,
+  numpy,
+  scikitlearn,
+  matplotlib,
+  tensorflow,
+  sql,
+  vscode,
+  androidstudio,
   git,
-  figma,
-  docker,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  github,
+  firebase,
 } from "../assets";
 
 export const navLinks = [
@@ -32,6 +38,10 @@ export const navLinks = [
   {
     id: "experience",
     title: "EXPERIENCE",
+  },
+  {
+    id: "tech stack",
+    title: "TECHNOLOGY STACK",
   },
   {
     id: "work",
@@ -68,56 +78,92 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "C",
+    icon: c,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "C++",
+    icon: cpp,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "Dart",
+    icon: dart,
+  },
+  {
+    name: "HTML5",
+    icon: html5,
+  },
+  {
+    name: "CSS3",
+    icon: css3,
   },
   {
     name: "JavaScript",
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Flutter",
+    icon: flutter,
   },
   {
     name: "Node JS",
-    icon: nodejs,
+    icon: node,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "React JS",
+    icon: react,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Pandas",
+    icon: pandas,
   },
   {
-    name: "git",
+    name: "Numpy",
+    icon: numpy,
+  },
+  {
+    name: "TensorFlow",
+    icon: tensorflow,
+  },
+  {
+    name: "Scikit Learn",
+    icon: scikitlearn,
+  },
+  {
+    name: "Matplotlib",
+    icon: matplotlib,
+  },
+  {
+    name: "SQL",
+    icon: sql,
+  },
+  {
+    name: "VS Code",
+    icon: vscode,
+  },
+  {
+    name: "Android Studio",
+    icon: androidstudio,
+  },
+  {
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "GitHub",
+    icon: github,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Firebase",
+    icon: firebase,
   },
 ];
 
@@ -196,7 +242,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    // image: carrent,
     source_code_link: "https://github.com/",
   },
   {
@@ -217,7 +263,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    // image: jobit,
     source_code_link: "https://github.com/",
   },
   {
@@ -238,7 +284,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    // image: tripguide,
     source_code_link: "https://github.com/",
   },
 ];

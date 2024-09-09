@@ -32,7 +32,7 @@ const About = () => {
     <div className={`${styles.paddingX} max-w-7xl mx-auto relative z-0`}>
       <motion.div variants={textVariant()}>
         <p
-          className={`${styles.sectionSubText} text-[#121117] mt-10 font-semibold font-poppins`}
+          className={`${styles.sectionSubText} text-[#121117] font-semibold font-poppins`}
         >
           INTRODUCTION
         </p>

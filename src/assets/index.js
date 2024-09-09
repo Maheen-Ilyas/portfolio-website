@@ -1,33 +1,50 @@
+// Hero Section
 import logo from "./logo.png";
+
+// About Section
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import libraries from "./libraries.png";
-import github from "./github.png";
+
+// Navigation Bar
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
+// Experience Section
+import repsoft from "./company/repsoft.png";
+import girlscript from "./company/girlscript.png";
+
+// Tech Section
+import c from "./tech/c.png";
+import cpp from "./tech/c++.png";
+import python from "./tech/python.png";
+import java from "./tech/java.png";
+import dart from "./tech/dart.png";
+import html5 from "./tech/html5.png";
+import css3 from "./tech/css3.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
 
-import repsoft from "./company/repsoft.png"
-import girlscript from "./company/girlscript.png"
+// Framework and Libraries
+import flutter from "./tech/flutter.png";
+import node from "./tech/node.png";
+import react from "./tech/react.png";
+import pandas from "./tech/pandas.png";
+import numpy from "./tech/numpy.png";
+import scikitlearn from "./tech/scikitlearn.png";
+import matplotlib from "./tech/matplotlib.png";
+import tensorflow from "./tech/tensorflow.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+// Database Query Language
+import sql from "./tech/sql.png";
+
+// Platform and Tools
+import vscode from "./tech/vscode.png";
+import androidstudio from "./tech/androidstudio.png";
+import git from "./tech/git.png";
+import github from "./tech/github.png";
+import firebase from "./tech/firebase.png";
 
 export {
   logo,
@@ -38,23 +55,28 @@ export {
   libraries,
   girlscript,
   repsoft,
-  github,
   menu,
   close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
+  c,
+  cpp,
+  python,
+  java,
+  dart,
+  html5,
+  css3,
   javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  carrent,
-  jobit,
-  tripguide,
+  flutter,
+  node,
+  react,
+  pandas,
+  numpy,
+  scikitlearn,
+  matplotlib,
+  tensorflow,
+  sql,
+  vscode,
+  androidstudio,
+  git,
+  github,
+  firebase,
 };
