@@ -25,10 +25,10 @@ const Contact = () => {
     setLoading(true);
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_7hqe0pj",
+        "template_d161yse",
         formRef.current,
-        "YOUR_PUBLIC_KEY"
+        "Z80HlcF6rSmgblRca"
       )
       .then(
         () => {
@@ -38,7 +38,7 @@ const Contact = () => {
         },
         (error) => {
           setLoading(false);
-          alert("An error occurred, please try again.");
+          alert("Something went wrong! Please try again.");
           console.error(error);
         }
       );
