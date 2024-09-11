@@ -28,6 +28,8 @@ import {
   git,
   github,
   firebase,
+  healtech,
+  detection,
 } from "../assets";
 
 export const navLinks = [
@@ -44,8 +46,8 @@ export const navLinks = [
     title: "TECHNOLOGY STACK",
   },
   {
-    id: "work",
-    title: "WORK",
+    id: "projects",
+    title: "PROJECTS",
   },
   {
     id: "contact",
@@ -225,67 +227,51 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "HealTech",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A Flutter-based application designed to manage appointments, medication schedules, and medical records.",
     tags: [
       {
-        name: "react",
+        name: "Dart",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Flutter",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Firebase",
         color: "pink-text-gradient",
       },
     ],
-    // image: carrent,
-    source_code_link: "https://github.com/",
+    image: healtech,
+    source_code_link: "https://github.com/Medlia/healtech",
   },
   {
-    name: "Job IT",
+    name: "Distracted Driver Detection",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A CNN-based system developed to identify and mitigate distracted driving behavior aiming to enhance road safety through automated monitoring.",
     tags: [
       {
-        name: "react",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "TensorFlow",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Scikit Learn",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Matplotlib",
         color: "pink-text-gradient",
       },
     ],
-    // image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    // image: tripguide,
-    source_code_link: "https://github.com/",
+    image: detection,
+    source_code_link:
+      "https://github.com/Maheen-Ilyas/distracted-driver-detection",
   },
 ];
 

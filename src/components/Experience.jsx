@@ -69,7 +69,6 @@ const Experience = () => {
     <div
       className={`${styles.paddingX} bg-[#12171D] max-w-7xl mx-auto relative z-0`}
     >
-      {" "}
       <motion.div variants={textVariant}>
         <p
           className={`${styles.sectionSubText} text-white-100 pt-6 font-semibold font-poppins`}

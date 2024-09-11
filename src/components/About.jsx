@@ -29,7 +29,7 @@ const ServiceCard = ({ title, index, icon }) => {
 
 const About = () => {
   return (
-    <div className={`${styles.paddingX} max-w-7xl mx-auto relative z-0`}>
+    <div className={`${styles.paddingX} bg-[#FEFEFE] max-w-7xl mx-auto relative z-0`}>
       <motion.div variants={textVariant()}>
         <p
           className={`${styles.sectionSubText} text-[#121117] font-semibold font-poppins`}

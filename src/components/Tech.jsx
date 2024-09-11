@@ -10,7 +10,7 @@ const Tech = () => {
   const secondRow = technologies.slice(11, 22);
 
   return (
-    <div className={`${styles.paddingX} mx-auto max-w-7xl relative z-0`}>
+    <div className={`${styles.paddingX} bg-[#FEFEFE] mx-auto max-w-7xl relative z-0`}>
       <motion.div variants={textVariant}>
         <p
           className={`${styles.sectionSubText} text-[#121117] font-semibold font-poppins`}
@@ -23,7 +23,7 @@ const Tech = () => {
           Technology Stack.
         </h2>
       </motion.div>
-      <div className="flex  max-auto overflow-x-hidden">
+      <div className="flex mt-10 max-auto overflow-x-hidden">
         <motion.div
           initial={{ x: 0 }}
           animate={{ x: "-100%" }}
@@ -62,7 +62,7 @@ const Tech = () => {
 
       <div className="flex h-12"></div>
 
-      <div className="flex max-auto overflow-x-hidden">
+      <div className="flex max-auto overflow-x-hidden mb-10">
         <motion.div
           initial={{ x: "-100%" }}
           animate={{ x: 0 }}

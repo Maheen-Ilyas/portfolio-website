@@ -46,6 +46,10 @@ import git from "./tech/git.png";
 import github from "./tech/github.png";
 import firebase from "./tech/firebase.png";
 
+// Projects
+import healtech from "../assets/healtech.jpg";
+import detection from "../assets/detection.jpg";
+
 export {
   logo,
   backend,
@@ -79,4 +83,6 @@ export {
   git,
   github,
   firebase,
+  healtech,
+  detection,
 };
