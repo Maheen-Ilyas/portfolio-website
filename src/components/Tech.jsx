@@ -13,17 +13,17 @@ const Tech = () => {
     <div className={`${styles.paddingX} bg-[#FEFEFE] mx-auto max-w-7xl relative z-0`}>
       <motion.div variants={textVariant}>
         <p
-          className={`${styles.sectionSubText} text-[#121117] font-semibold font-poppins`}
+          className={`${styles.sectionSubText} text-[#121117] pt-6 font-semibold font-poppins`}
         >
           WHAT I WORK WITH
         </p>
         <h2
-          className={`${styles.sectionHeadText} text-[#14161E] mb-10 font-bold font-playfair`}
+          className={`${styles.sectionHeadText} text-[#14161E] font-bold font-playfair`}
         >
           Technology Stack.
         </h2>
       </motion.div>
-      <div className="flex mt-10 max-auto overflow-x-hidden">
+      <div className="flex mt-20 max-auto overflow-x-hidden">
         <motion.div
           initial={{ x: 0 }}
           animate={{ x: "-100%" }}
@@ -62,7 +62,7 @@ const Tech = () => {
 
       <div className="flex h-12"></div>
 
-      <div className="flex max-auto overflow-x-hidden mb-10">
+      <div className="flex max-auto overflow-x-hidden">
         <motion.div
           initial={{ x: "-100%" }}
           animate={{ x: 0 }}
@@ -84,7 +84,7 @@ const Tech = () => {
           initial={{ x: "-100%" }}
           animate={{ x: 0 }}
           transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-          className="flex flex-shrink-0"
+          className="flex flex-shrink-0 mb-20"
         >
           {secondRow.map((secondRowTechnology, secondRowIndex) => {
             return (

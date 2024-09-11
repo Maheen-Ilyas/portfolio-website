@@ -71,7 +71,7 @@ const Experience = () => {
     >
       <motion.div variants={textVariant}>
         <p
-          className={`${styles.sectionSubText} text-white-100 pt-6 font-semibold font-poppins`}
+          className={`${styles.sectionSubText} text-white-100 mt-2 font-semibold font-poppins`}
         >
           WHAT I HAVE DONE SO FAR
         </p>

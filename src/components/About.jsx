@@ -8,7 +8,7 @@ import SectionWrapper from "../hoc/SectionWrapper";
 
 const ServiceCard = ({ title, index, icon }) => {
   return (
-    <Tilt className="xs:w-[240px] w-full">
+    <Tilt className="xs:w-[240px] w-full mb-10">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="black-border-gradient p-[1px] rounded-[20px] shadow-card"
@@ -32,7 +32,7 @@ const About = () => {
     <div className={`${styles.paddingX} bg-[#FEFEFE] max-w-7xl mx-auto relative z-0`}>
       <motion.div variants={textVariant()}>
         <p
-          className={`${styles.sectionSubText} text-[#121117] font-semibold font-poppins`}
+          className={`${styles.sectionSubText} text-[#121117] pt-6 font-semibold font-poppins`}
         >
           INTRODUCTION
         </p>
