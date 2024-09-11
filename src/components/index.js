@@ -6,6 +6,7 @@ import Tech from "./Tech";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Footer from "./Footer";
 import CanvasLoader from "./Loader";
 
 export {
@@ -16,6 +17,7 @@ export {
   Experience,
   Projects,
   Contact,
+  Footer,
   CanvasLoader,
   EarthCanvas,
   OrbCanvas,
