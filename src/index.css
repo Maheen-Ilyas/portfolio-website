@@ -5,7 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
   @apply scrollbar-thin scrollbar-webkit;
 }
 
@@ -14,17 +15,17 @@ html, body {
 }
 
 .scrollbar-webkit::-webkit-scrollbar-track {
-  background-color: #FEFEFE;
+  background-color: #fefefe;
   border-radius: 20px;
 }
 
 .scrollbar-webkit::-webkit-scrollbar-thumb {
-  background-color: #12111D;
+  background-color: #12111d;
   border-radius: 20px;
 }
 
 .scrollbar-thin {
-  scrollbar-color: #12111D #FEFEFE;
+  scrollbar-color: #12111d #fefefe;
   scrollbar-width: thin;
 }
 
@@ -91,72 +92,46 @@ html, body {
   transform: rotateY(180deg);
 }
 
+@media (max-width: 550px) {
+  .quote {
+    display: none;
+  }
+}
+
 .black-border-gradient {
   background: "#00cea8";
-  background: linear-gradient(90.13deg, #14161E 1.9%, #07060A 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #14161E 1.9%, #07060A 97.5%);
+  background: linear-gradient(90.13deg, #14161e 1.9%, #07060a 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #14161e 1.9%, #07060a 97.5%);
 }
 
 .orange-text-gradient {
-  background: #F12711;
-  background: -webkit-linear-gradient(
-    to top,
-    #F12711,
-    #F5aF19
-  );
-  background: linear-gradient(
-    to top,
-    #F12711,
-    #F5aF19
-  );
+  background: #f12711;
+  background: -webkit-linear-gradient(to top, #f12711, #f5af19);
+  background: linear-gradient(to top, #f12711, #f5af19);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .green-text-gradient {
-  background: #11998E; 
-  background: -webkit-linear-gradient(
-    to top,
-    #11998E,
-    #38EF7D
-  ); 
-  background: linear-gradient(
-    to top,
-    #11998E,
-    #38EF7D
-  ); 
+  background: #11998e;
+  background: -webkit-linear-gradient(to top, #11998e, #38ef7d);
+  background: linear-gradient(to top, #11998e, #38ef7d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .blue-text-gradient {
-  background: #56CCF2;
-  background: -webkit-linear-gradient(
-    to top,
-    #2F80ED,
-    #56ccf2
-  ); 
-  background: linear-gradient(
-    to top,
-    #2F80ED,
-    #56CCF2
-  ); 
+  background: #56ccf2;
+  background: -webkit-linear-gradient(to top, #2f80ed, #56ccf2);
+  background: linear-gradient(to top, #2f80ed, #56ccf2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .pink-text-gradient {
   background: #ec008c;
-  background: -webkit-linear-gradient(
-    to top,
-    #EC008C,
-    #FC6767
-  );
-  background: linear-gradient(
-    to top,
-    #EC008C,
-    #FC6767
-  );
+  background: -webkit-linear-gradient(to top, #ec008c, #fc6767);
+  background: linear-gradient(to top, #ec008c, #fc6767);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -175,7 +150,7 @@ html, body {
 @keyframes mulShdSpin {
   0%,
   100% {
-    box-shadow: 0em -2.6em 0em 0em #FFF,
+    box-shadow: 0em -2.6em 0em 0em #fff,
       1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
       2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
       1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
@@ -195,7 +170,7 @@ html, body {
   }
   25% {
     box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.5),
-      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7), 2.5em 0em 0 0em #FFF,
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7), 2.5em 0em 0 0em #fff,
       1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
       0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
@@ -205,7 +180,7 @@ html, body {
   37.5% {
     box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
       1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5),
-      2.5em 0em 0 0em rgba(255, 255, 255, 0.7), 1.75em 1.75em 0 0em #FFF,
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.7), 1.75em 1.75em 0 0em #fff,
       0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
@@ -215,7 +190,7 @@ html, body {
     box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
       1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
       2.5em 0em 0 0em rgba(255, 255, 255, 0.5),
-      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.7), 0em 2.5em 0 0em #FFF,
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.7), 0em 2.5em 0 0em #fff,
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
       -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
@@ -225,7 +200,7 @@ html, body {
       1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
       2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
       1.75em 1.75em 0 0em rgba(255, 255, 255, 0.5),
-      0em 2.5em 0 0em rgba(255, 255, 255, 0.7), -1.8em 1.8em 0 0em #FFF,
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.7), -1.8em 1.8em 0 0em #fff,
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
       -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
   }
@@ -235,7 +210,7 @@ html, body {
       2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
       1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
       0em 2.5em 0 0em rgba(255, 255, 255, 0.5),
-      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.7), -2.6em 0em 0 0em #FFF,
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.7), -2.6em 0em 0 0em #fff,
       -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
   }
   87.5% {
@@ -245,6 +220,6 @@ html, body {
       1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
       0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
-      -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #FFF;
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #fff;
   }
 }

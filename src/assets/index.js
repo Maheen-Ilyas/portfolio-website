@@ -45,6 +45,7 @@ import androidstudio from "./tech/androidstudio.png";
 import git from "./tech/git.png";
 import github from "./tech/github.png";
 import firebase from "./tech/firebase.png";
+import linkedin from "./linkedin.png";
 
 // Projects
 import healtech from "../assets/healtech.jpg";
@@ -83,6 +84,7 @@ export {
   git,
   github,
   firebase,
+  linkedin,
   healtech,
   detection,
 };
