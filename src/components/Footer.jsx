@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { navLinks } from "../constants";
 import { styles } from "../styles";
 import { logo, github, linkedin } from "../assets";
+import { StarsCanvas } from "../components";
 
 const Footer = () => {
   const [active, setActive] = useState("");
@@ -11,6 +12,7 @@ const Footer = () => {
     <div
       className={`${styles.paddingX} py-6 bg-[#12171D] max-w-7xl mx-auto relative z-0`}
     >
+      <StarsCanvas />
       <div className="flex mb-8">
         <Link
           to="/"
@@ -30,24 +32,22 @@ const Footer = () => {
           Maheen Ilyas
         </h3>
       </div>
-      <div className="flex justify-center mb-12">
-        <div className="bg-[#FEFEFE] py-4 px-8 rounded-[50px] max-w-[700px] w-full">
-          <ul className="list-none flex justify-center flex-row">
-            {navLinks.map((link) => (
-              <li
-                key={link.id}
-                className={`${
-                  active === link.title ? "text-[#121117]" : "text-[#121117]"
-                } mr-6 font-poppins font-semibold cursor-pointer text-[16px]`}
-                onClick={() => {
-                  setActive(link.title);
-                }}
-              >
-                <a href={`#${link.id}`}>{link.title}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
+      <div className="glass flex justify-start mb-8">
+        <ul className="list-none p-6 gap-2 flex flex-col justify-start">
+          {navLinks.map((link) => (
+            <li
+              key={link.id}
+              className={`${
+                active === link.title ? "text-[#FEFEFE]" : "text-[#FEFEFE]"
+              } font-poppins font-medium cursor-pointer text-[16px]`}
+              onClick={() => {
+                setActive(link.title);
+              }}
+            >
+              <a href={`#${link.id}`}>{link.title}</a>
+            </li>
+          ))}
+        </ul>
       </div>
       <div className="flex justify-between">
         <div>
