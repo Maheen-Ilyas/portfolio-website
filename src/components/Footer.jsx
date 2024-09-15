@@ -28,12 +28,12 @@ const Footer = () => {
             className="w-[40px] h-[30px] mr-4 cursor-pointer"
           />
         </Link>
-        <h3 className="font-playfair font-bold text-[18px] text-[#FEFEFE]">
-          Maheen Ilyas
+        <h3 className="font-playfair font-bold text-[22px] text-[#FEFEFE]">
+          MAHEEN ILYAS
         </h3>
       </div>
-      <div className="glass flex justify-start mb-8">
-        <ul className="list-none p-6 gap-2 flex flex-col justify-start">
+      <div className="glass flex justify-start mb-16">
+        <ul className="list-none p-6 gap-2 flex flex-col">
           {navLinks.map((link) => (
             <li
               key={link.id}
